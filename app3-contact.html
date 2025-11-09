@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- local stysheet -->
      <link rel="stylesheet" href="app3stylesheet.css">
-
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -22,9 +23,9 @@
         <div class="container-fluid">
             <div class="d-flex justify-content-between align-items-center">
                 <ul class="d-flex mb-0">
-                    <li><a href="#"><i class="bi bi-geo-alt-fill"></i> 392 Garrisonville Rd, Suite 209, Stafford, VA 22554</a></li>
-                    <li><a href="tel:+15714011933"><i class="bi bi-telephone-fill"></i> +1 (571) 401-1933</a></li>
-                    <li><a href="tel:+15714011934"><i class="bi bi-telephone-fill"></i> +1 (571) 401-1934</a></li>
+                    <li><a href="#"><i class="bi bi-geo-alt-fill"></i> 181 Milrace Road Stafford VA 22554</a></li>
+                    <li><a href="tel:+17034006000"><i class="bi bi-telephone-fill"></i> +1 (703) 400-6000</a></li>
+                    <li><a href="tel:+17035686800"><i class="bi bi-telephone-fill"></i> +1 (703) 568-6800</a></li>
                 </ul>
                 <div class="social-icons-top">
                     <a href="#"><i class="bi bi-linkedin"></i></a>
@@ -76,7 +77,7 @@
                             <i class="bi bi-geo-alt-fill"></i>
                         </div>
                         <h4>Our Location</h4>
-                        <p>392 Garrisonville Rd,<br>Suite 209<br>Stafford, VA 22554</p>
+                        <p>181 Milrace Road<br>Stafford VA 22554</p>
                     </div>
                 </div>
 
@@ -88,8 +89,8 @@
                         </div>
                         <h4>Phone Numbers</h4>
                         <p>
-                            <a href="tel:+15714011933">+1 (571) 401-1933</a><br>
-                            <a href="tel:+15714011934">+1 (571) 401-1934</a>
+                            <a href="tel:+17034006000">+1 (703) 400-6000</a><br>
+                            <a href="tel:+17035686800">+1 (703) 568-6800</a>
                         </p>
                     </div>
                 </div>
@@ -116,22 +117,24 @@
                 <div class="col-lg-6">
                     <div class="contact-form-wrapper">
                         <h2 style="color: #1e3a8a; margin-bottom: 25px; font-weight: 600;">Send Us A Message</h2>
-                        <form>
+                        <form action="https://formspree.io/f/xanykorb" method="POST">
                             <div class="mb-4">
-                                <input type="text" class="form-control contact-input" placeholder="Your Name *" required>
+                                <input type="text" class="form-control contact-input" name="name" placeholder="Your Name *" required>
                             </div>
                             <div class="mb-4">
-                                <input type="email" class="form-control contact-input" placeholder="Your Email *" required>
+                                <input type="email" class="form-control contact-input" name="email" placeholder="Your Email *" required>
                             </div>
                             <div class="mb-4">
-                                <input type="tel" class="form-control contact-input" placeholder="Phone Number">
+                                <input type="tel" class="form-control contact-input" name="phone" placeholder="Phone Number">
                             </div>
                             <div class="mb-4">
-                                <input type="text" class="form-control contact-input" placeholder="Subject">
+                                <input type="text" class="form-control contact-input" name="subject" placeholder="Subject">
                             </div>
                             <div class="mb-4">
-                                <textarea class="form-control contact-input" rows="5" placeholder="Your Message *" required></textarea>
+                                <textarea class="form-control contact-input" rows="5" name="message" placeholder="Your Message *" required></textarea>
                             </div>
+                            <input type="hidden" name="_subject" value="New Contact Message - Champ Home Care">
+                            <input type="hidden" name="_replyto" value="Support@champhomecarellc.com">
                             <button type="submit" class="btn-contact-submit">Send Message</button>
                         </form>
                     </div>
@@ -236,8 +239,9 @@
                     <h5>Contact Info</h5>
                     <ul>
                         <li><i class="bi bi-geo-alt-fill"></i> Stafford, VA 22554</li>
-                        <li><i class="bi bi-telephone-fill"></i> +1 (571) 401-1933</li>
-                        <li><i class="bi bi-telephone-fill"></i> +1 (571) 401-1934</li>
+                        <li><i class="bi bi-telephone-fill"></i> +1 (703) 400-6000</li>
+                        <li><i class="bi bi-telephone-fill"></i> +1 (703) 568-6800</li>
+                        <li><i class="bi bi-envelope-fill"></i> Support@champhomecarellc.com</li>
                     </ul>
                 </div>
             </div>
@@ -250,6 +254,18 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+    </script>
 
     <script>
         // Smooth scrolling for anchor links

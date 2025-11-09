@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- local stysheet -->
      <link rel="stylesheet" href="app3stylesheet.css">
-
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -22,9 +23,9 @@
         <div class="container-fluid">
             <div class="d-flex justify-content-between align-items-center">
                 <ul class="d-flex mb-0">
-                    <li><a href="#"><i class="bi bi-geo-alt-fill"></i> 392 Garrisonville Rd, Suite 209, Stafford, VA 22554</a></li>
-                    <li><a href="tel:+15714011933"><i class="bi bi-telephone-fill"></i> +1 (571) 401-1933</a></li>
-                    <li><a href="tel:+15714011934"><i class="bi bi-telephone-fill"></i> +1 (571) 401-1934</a></li>
+                    <li><a href="#"><i class="bi bi-geo-alt-fill"></i> 181 Milrace Road Stafford VA 22554</a></li>
+                    <li><a href="tel:+17034006000"><i class="bi bi-telephone-fill"></i> +1 (703) 400-6000</a></li>
+                    <li><a href="tel:+17035686800"><i class="bi bi-telephone-fill"></i> +1 (703) 568-6800</a></li>
                 </ul>
                 <div class="social-icons-top">
                     <a href="#"><i class="bi bi-linkedin"></i></a>
@@ -275,9 +276,9 @@
                             <i class="bi bi-telephone-fill"></i>
                         </div>
                         <h2>Confirm Service Availability In Your Area</h2>
-                        <p>Call <a href="tel:+15714011933">(571) 401-1933</a> or <a href="tel:+15714011934">(571) 401-1934</a> today to confirm service availability in your area and explore personalized care options with our friendly team.</p>
+                        <p>Call <a href="tel:+17034006000">(703) 400-6000</a> or <a href="tel:+17035686800">(703) 568-6800</a> today to confirm service availability in your area and explore personalized care options with our friendly team.</p>
                         <div class="cta-buttons">
-                            <a href="tel:+15714011933" class="btn-primary-red">Call Now</a>
+                            <a href="tel:+17034006000" class="btn-primary-red">Call Now</a>
                             <a href="/app3-contact.html" class="btn btn-hero-secondary">Contact Us</a>
                         </div>
                     </div>
@@ -419,8 +420,9 @@
                     <h5>Contact Info</h5>
                     <ul>
                         <li><i class="bi bi-geo-alt-fill"></i> Stafford, VA 22554</li>
-                        <li><i class="bi bi-telephone-fill"></i> +1 (571) 401-1933</li>
-                        <li><i class="bi bi-telephone-fill"></i> +1 (571) 401-1934</li>
+                        <li><i class="bi bi-telephone-fill"></i> +1 (703) 400-6000</li>
+                        <li><i class="bi bi-telephone-fill"></i> +1 (703) 568-6800</li>
+                        <li><i class="bi bi-envelope-fill"></i> Support@champhomecarellc.com</li>
                     </ul>
                 </div>
             </div>
@@ -433,6 +435,18 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+    </script>
 
     <script>
         // Smooth scrolling for anchor links

@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- local stysheet -->
      <link rel="stylesheet" href="app3stylesheet.css">
-    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -22,9 +23,9 @@
         <div class="container-fluid">
             <div class="d-flex justify-content-between align-items-center">
                 <ul class="d-flex mb-0">
-                    <li><a href="#"><i class="bi bi-geo-alt-fill"></i> 392 Garrisonville Rd, Suite 209, Stafford, VA 22554</a></li>
-                    <li><a href="tel:+15714011933"><i class="bi bi-telephone-fill"></i> +1 (571) 401-1933</a></li>
-                    <li><a href="tel:+15714011934"><i class="bi bi-telephone-fill"></i> +1 (571) 401-1934</a></li>
+                    <li><a href="#"><i class="bi bi-geo-alt-fill"></i> 181 Milrace Road Stafford VA 22554</a></li>
+                    <li><a href="tel:+17034006000"><i class="bi bi-telephone-fill"></i> +1 (703) 400-6000</a></li>
+                    <li><a href="tel:+17035686800"><i class="bi bi-telephone-fill"></i> +1 (703) 568-6800</a></li>
                 </ul>
                 <div class="social-icons-top">
                     <a href="#"><i class="bi bi-linkedin"></i></a>
@@ -73,7 +74,7 @@
     <section class="counties-section" id="counties">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
                     <div class="counties-image">
                         <img src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?q=80&w=800" alt="Smiling senior with caregiver">
                         <button class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal">
@@ -81,7 +82,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-left">
                     <div class="counties-content">
                         <h3>Explore Services With Us</h3>
                         <h2>Serving In Northern Virginia</h2>
@@ -126,8 +127,8 @@
                     
                     <div class="call-chip">
                         <div class="call-title fluid">Call Any Time</div>
-                        <a href="tel:+15714011933">+1 (571) 401-1933</a>
-                        <a href="tel:+15714011934">+1 (571) 401-1934</a>
+                        <a href="tel:+17034006000">+1 (703) 400-6000</a>
+                        <a href="tel:+17035686800">+1 (703) 568-6800</a>
                     </div>
                 </div>
             </div>
@@ -144,7 +145,7 @@
             </div>
             
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
                     <div class="service-card">
                         <span class="service-tag">Service 01</span>
                         <div class="service-icon">
@@ -154,8 +155,8 @@
                         <p>Bathing, grooming, oral care, hygiene, dressing, toileting, meal preparation, medication reminders and general maintenance.</p>
                     </div>
                 </div>
-                
-                <div class="col-lg-4 col-md-6">
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-card">
                         <span class="service-tag">Service 02</span>
                         <div class="service-icon">
@@ -165,8 +166,8 @@
                         <p>Provides clients with conversation, reminiscing, hobbies, recreational, exercise and other activities.</p>
                     </div>
                 </div>
-                
-                <div class="col-lg-4 col-md-6">
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-card">
                         <span class="service-tag">Service 03</span>
                         <div class="service-icon">
@@ -207,6 +208,17 @@
                         </div>
                         <h4>24-Hour Live-In Care</h4>
                         <p>Comprehensive around-the-clock care and supervision for individuals requiring constant support and assistance at home.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <span class="service-tag">Service 07</span>
+                        <div class="service-icon">
+                            <i class="bi bi-balloon-heart"></i>
+                        </div>
+                        <h4>Pediatric & Adolescent Care</h4>
+                        <p>Specialized support for children and adolescents with special needs, chronic conditions, or developmental challenges, providing compassionate care tailored to young individuals.</p>
                     </div>
                 </div>
             </div>
@@ -394,19 +406,21 @@
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="contact-card">
                         <h4 style="margin-bottom: 20px; color: #1e3a8a;">Send Us A Message</h4>
-                        <form>
+                        <form action="https://formspree.io/f/xanykorb" method="POST">
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Your Name" required>
+                                <input type="text" class="form-control" name="name" placeholder="Your Name" required>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Your Email" required>
+                                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
                             </div>
                             <div class="mb-3">
-                                <input type="tel" class="form-control" placeholder="Your Phone">
+                                <input type="tel" class="form-control" name="phone" placeholder="Your Phone">
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                <textarea class="form-control" rows="5" name="message" placeholder="Your Message" required></textarea>
                             </div>
+                            <input type="hidden" name="_subject" value="New Contact Form Submission from Champ Home Care">
+                            <input type="hidden" name="_replyto" value="Support@champhomecarellc.com">
                             <button type="submit" class="btn-primary-red w-50">Send Message</button>
                         </form>
                     </div>
@@ -420,7 +434,7 @@
                             <h6 style="color: #2563eb; font-weight: 600; margin-bottom: 10px;">
                                 <i class="bi bi-geo-alt-fill"></i> Fredericksburg Office
                             </h6>
-                            <p>392 Garrisonville Rd, Suite 209, Stafford, VA 22554</p>
+                            <p>181 Milrace Road Stafford VA 22554</p>
                         </div>
 
                         <div style="margin-bottom: 25px;">
@@ -428,8 +442,8 @@
                                 <i class="bi bi-telephone-fill"></i> Phone Numbers
                             </h6>
                             <p>
-                                <a href="tel:+15714011933" style="color: #333; text-decoration: none;">+1 (571) 401-1933</a><br>
-                                <a href="tel:+15714011934" style="color: #333; text-decoration: none;">+1 (571) 401-1934</a>
+                                <a href="tel:+17034006000" style="color: #333; text-decoration: none;">+1 (703) 400-6000</a><br>
+                                <a href="tel:+17035686800" style="color: #333; text-decoration: none;">+1 (703) 568-6800</a>
                             </p>
                         </div>
 
@@ -554,25 +568,25 @@
                 <div class="col-lg-8">
                     <div class="contact-card">
                         <h4 style="margin-bottom: 20px; text-align: center; color: #1e3a8a;">Request Caregiver Services</h4>
-                        <form>
+                        <form action="https://formspree.io/f/xanykorb" method="POST">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control" placeholder="Client Name" required>
+                                    <input type="text" class="form-control" name="client_name" placeholder="Client Name" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <input type="email" class="form-control" placeholder="Email Address" required>
+                                    <input type="email" class="form-control" name="email" placeholder="Email Address" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
-                                    <input type="tel" class="form-control" placeholder="Phone Number" required>
+                                    <input type="tel" class="form-control" name="phone" placeholder="Phone Number" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control" placeholder="City" required>
+                                    <input type="text" class="form-control" name="city" placeholder="City" required>
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <select class="form-select" required style="border: 2px solid #e0e0e0; padding: 12px 15px; border-radius: 8px;">
+                                <select class="form-select" name="service_type" required style="border: 2px solid #e0e0e0; padding: 12px 15px; border-radius: 8px;">
                                     <option value="">Select Service Type</option>
                                     <option>Personal Care</option>
                                     <option>Companion Care</option>
@@ -580,11 +594,14 @@
                                     <option>Dementia Care</option>
                                     <option>Transportation</option>
                                     <option>24-Hour Care</option>
+                                    <option>Pediatric & Adolescent Care</option>
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" rows="4" placeholder="Tell us about your care needs..." required></textarea>
+                                <textarea class="form-control" rows="4" name="care_needs" placeholder="Tell us about your care needs..." required></textarea>
                             </div>
+                            <input type="hidden" name="_subject" value="New Caregiver Service Request - Champ Home Care">
+                            <input type="hidden" name="_replyto" value="Support@champhomecarellc.com">
                             <button type="submit" class="btn-primary-red w-100">Submit Request</button>
                         </form>
                     </div>
@@ -634,8 +651,9 @@
                     <h5>Contact Info</h5>
                     <ul>
                         <li><i class="bi bi-geo-alt-fill"></i> Stafford, VA 22554</li>
-                        <li><i class="bi bi-telephone-fill"></i> +1 (571) 401-1933</li>
-                        <li><i class="bi bi-telephone-fill"></i> +1 (571) 401-1934</li>
+                        <li><i class="bi bi-telephone-fill"></i> +1 (703) 400-6000</li>
+                        <li><i class="bi bi-telephone-fill"></i> +1 (703) 568-6800</li>
+                        <li><i class="bi bi-envelope-fill"></i> Support@champhomecarellc.com</li>
                     </ul>
                 </div>
             </div>
@@ -665,7 +683,19 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+    </script>
+
     <script>
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
